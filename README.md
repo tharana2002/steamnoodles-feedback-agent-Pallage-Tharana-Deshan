@@ -93,7 +93,7 @@ Setup & Run Instructions – Sentiment Plotting Agent
 
    !pip install pandas matplotlib
    
-2. Upload the Python Script & CSV File - In Colab, run this to upload your files:
+3. Upload the Python Script & CSV File - In Colab, run this to upload your files:
 
 from google.colab import files
 
@@ -110,11 +110,11 @@ files.upload()
 
 Make sure your CSV file is named exactly: Restaurant reviews.csv
 
-3. Run the Script - After uploading, execute:
+4. Run the Script - After uploading, execute:
 
    !python agent_sentiment_plot.py
    
-4. Check the Output - The script will save the sentiment trend plot to:
+5. Check the Output - The script will save the sentiment trend plot to:
    sentiment_trend.png
 
    To view it directly in Colab:
@@ -122,7 +122,7 @@ Make sure your CSV file is named exactly: Restaurant reviews.csv
 from IPython.display import Image
 Image(filename="sentiment_trend.png")
 
-5. Example Run in Colab - If your dataset contains ratings and timestamps, you might run:
+6. Example Run in Colab - If your dataset contains ratings and timestamps, you might run:
 
 from agent_sentiment_plot import plot_sentiment_trends
 plot_sentiment_trends("2019-03-22", "2019-03-29")
